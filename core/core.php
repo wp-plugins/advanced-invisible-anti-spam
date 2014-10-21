@@ -30,11 +30,19 @@ class Advanced_Invisible_AntiSpam
 
 	public function add_token( $fields )
 	{
+		if ( is_admin() ) {
+			return;
+		}
+
 		echo '<input id="'.$this->key.'" name="'.$this->key.'" type="hidden" value="" />';
 	}
 
 	public function check_token( $commentdata )
 	{
+		if ( is_admin() ) {
+			return $commentdata;
+		}
+
 		$post_key = isset( $_POST[ $this->key ] ) ? $_POST[ $this->key ] : false;
 
 		if ( wp_verify_nonce( $post_key, 'aia_antispam_' . $this->key ) ) {

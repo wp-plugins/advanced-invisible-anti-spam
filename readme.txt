@@ -35,3 +35,13 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 == Screenshots ==
 
 1. The error message shown to bots, or users who do not have javascript enabled. This message is translatable, and filterable.
+
+== Changelog ==
+
+= 1.1 =
+* Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
+
+== Upgrade Notice ==
+
+= 1.1 =
+Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
