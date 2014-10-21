@@ -30,10 +30,6 @@ class Advanced_Invisible_AntiSpam
 
 	public function add_token( $fields )
 	{
-		if ( is_admin() ) {
-			return;
-		}
-
 		echo '<input id="'.$this->key.'" name="'.$this->key.'" type="hidden" value="" />';
 	}
 
