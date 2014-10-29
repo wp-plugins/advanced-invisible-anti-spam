@@ -6,7 +6,7 @@ Tested up to: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Block comment spam without making your users fill out captchas. Cache Friendly solution with rotating key! Activate and done!
+Block bots without making your users fill out captchas. Cache Friendly solution with rotating keys! Activate and done!
 
 == Description ==
 
@@ -16,10 +16,11 @@ This solution works automatically without any user configuration, and puts no ad
 
 Key features:
 
-*	Fully compatible with wordpress caching plugins or even more advanced server level caching solutions.
-*	Utilizes a rotating token which changes every 24 hours, which stops more clever bots that might try caching the token.
-*	Unique/Random field name which makes it difficult for spammers to script their bots to target this antispam solution.
+*	Fully compatible with wordpress caching plugins or even more advanced server level caching solutions (like WP Engine).
+*	Utilizes randomly generated and rotating token field name and token value, which stops more clever bots that might try caching the 'solved' field.
+*	Anti-spam field is randomly placed within the form on page load to make it difficult for spammers to target the field.
 *	Developer friendly with filters and actions
+*	Lightweight, clean, and efficient solution to comment spam
 *	Uses native JavaScript to avoid jQuery dependancies
 
 Requires JavaScript be enabled in client browser (Users will see a warning if JavaScript is disabled)
@@ -38,10 +39,17 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 
 == Changelog ==
 
+= 1.2 =
+* New Feature: The anti-spam token field name now also rotates similiar to the token value. Token names expire every 2 hours. The most recently expired field name can also be submitted to without failure. This prevents a commentor from getting caught during the transition between an old and new field name.
+* New Feature: Placement of the anti-spam token input is now randomized to appear in different places within the comment form. This coupled with the rotating and random field names makes it difficult for spammers to defeat the system.
+
 = 1.1 =
 * Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
 
 == Upgrade Notice ==
+
+= 1.2 =
+Added even more cache-friendly spam busting capabilities
 
 = 1.1 =
 Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
