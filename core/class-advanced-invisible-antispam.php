@@ -36,7 +36,7 @@ class Advanced_Invisible_AntiSpam
 
 	public function check_token( $commentdata )
 	{
-		if ( is_admin() ) {
+		if ( current_user_can( 'moderate_comments' ) ) {
 			return $commentdata;
 		}
 

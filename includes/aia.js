@@ -19,9 +19,11 @@ function update_token() {
 	}
 }
 
-var data	= 'action=aia_field_update';
-var request = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject( 'Microsoft.XMLHTTP' );
-request.open( 'POST', AIA.ajaxurl, true );
-request.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8' );
-request.onreadystatechange = update_token;
-request.send( data );
+if ( null !== document.getElementById( 'aia_placeholder' ) ) {
+	var data	= 'action=aia_field_update';
+	var request = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject( 'Microsoft.XMLHTTP' );
+	request.open( 'POST', AIA.ajaxurl, true );
+	request.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8' );
+	request.onreadystatechange = update_token;
+	request.send( data );
+}

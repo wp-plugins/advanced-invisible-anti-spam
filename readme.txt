@@ -39,6 +39,10 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 
 == Changelog ==
 
+= 1.2.1 =
+* New Feature: Added support for ajax type comment forms.
+* Fixed obscure bug that caused JS errors when this plugin is used along with BWP Minify plugin (and perhaps other JS concat plugins/methods as well)
+
 = 1.2 =
 * New Feature: The anti-spam token field name now also rotates similiar to the token value. Token names expire every 2 hours. The most recently expired field name can also be submitted to without failure. This prevents a commentor from getting caught during the transition between an old and new field name.
 * New Feature: Placement of the anti-spam token input is now randomized to appear in different places within the comment form. This coupled with the rotating and random field names makes it difficult for spammers to defeat the system.
@@ -47,6 +51,10 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 * Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Added support for ajax type comment forms
+Fixed obscure bug that caused JS errors when this plugin is used along with BWP Minify plugin (and perhaps other JS concat plugins/methods as well)
 
 = 1.2 =
 Added even more cache-friendly spam busting capabilities
