@@ -6,13 +6,13 @@ Tested up to: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Block bots without making your users fill out captchas. Cache Friendly solution with rotating keys! Activate and done!
+Block bots without making your users fill out captchas. Cache-Friendly solution with rotating keys! Blocks comment and registration spam. Activate and done!
 
 == Description ==
 
 Anti-Spam solutions that require your users to fill out captcha's are frustrating for actual humans, and not that great at stopping bots.
 
-This solution works automatically without any user configuration, and puts no additional burden on your users to submit comments.
+This solution works automatically without any user configuration, and puts no additional burden on your users. After activation this plugin will go to work stopping both comment spam, and spam bot registration.
 
 Key features:
 
@@ -20,7 +20,7 @@ Key features:
 *	Utilizes randomly generated and rotating token field name and token value, which stops more clever bots that might try caching the 'solved' field.
 *	Anti-spam field is randomly placed within the form on page load to make it difficult for spammers to target the field.
 *	Developer friendly with filters and actions
-*	Lightweight, clean, and efficient solution to comment spam
+*	Lightweight, clean, and efficient solution to comment and registration spam
 *	Uses native JavaScript to avoid jQuery dependancies
 
 Requires JavaScript be enabled in client browser (Users will see a warning if JavaScript is disabled)
@@ -35,9 +35,13 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 
 == Screenshots ==
 
-1. The error message shown to bots, or users who do not have javascript enabled. This message is translatable, and filterable.
+1. ( Comments ) The error message shown to bots, or users who do not have javascript enabled. This message is translatable, and filterable.
+2. ( Registration ) The error message shown to bots, or users who do not have javascript enabled. This message is translatable, and filterable.
 
 == Changelog ==
+
+= 1.3 =
+* New Feature: Added Anti-Spam capabilities to the user registration screen to block spam bot registration
 
 = 1.2.1 =
 * New Feature: Added support for ajax type comment forms.
@@ -52,12 +56,9 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 
 == Upgrade Notice ==
 
+= 1.3 =
+New Feature: Added Anti-Spam capabilities to the user registration screen to block spam bot registration
+
 = 1.2.1 =
 Added support for ajax type comment forms
 Fixed obscure bug that caused JS errors when this plugin is used along with BWP Minify plugin (and perhaps other JS concat plugins/methods as well)
-
-= 1.2 =
-Added even more cache-friendly spam busting capabilities
-
-= 1.1 =
-Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
