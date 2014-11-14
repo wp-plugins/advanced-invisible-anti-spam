@@ -41,7 +41,7 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 == Changelog ==
 
 = 1.3 =
-* New Feature: Added Anti-Spam capabilities to the user registration screen to block spam bot registration
+* New Feature: Added Anti-Spam capabilities to the user registration screen to block spam bot registration.
 
 = 1.2.1 =
 * New Feature: Added support for ajax type comment forms.
