@@ -6,7 +6,7 @@ Tested up to: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Block bots without making your users fill out captchas. Cache-Friendly solution with rotating keys! Blocks comment and registration spam. Activate and done!
+Block bots without frustrating captchas. Cache-Friendly solution with rotating keys! Blocks comment and registration spam. Activate and done!
 
 == Description ==
 
