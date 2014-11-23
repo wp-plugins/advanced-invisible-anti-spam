@@ -4,7 +4,7 @@ Plugin Name: Advanced Invisible Anti-Spam
 Plugin URI: http://mattkeys.me
 Description: Block bots without making your users fill out captchas. Cache Friendly solution with rotating keys!
 Author: Matt Keys
-Version: 1.3
+Version: 1.4
 Author URI: http://mattkeys.me
 */
 
@@ -21,3 +21,4 @@ if ( ! defined( 'AIA_PUBLIC_PATH' ) ) {
 require 'core/class-AIA-Helpers.php';
 require 'core/class-AIA-Comments.php';
 require 'core/class-AIA-Registration.php';
+require 'core/class-AIA-bbPress.php';
