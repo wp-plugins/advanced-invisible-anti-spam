@@ -63,7 +63,7 @@ class AIA_bbPress
 
 	public function javascript_warning()
 	{
-		$warning_text = __( 'JavaScript is required to submit comments. Please enable JavaScript before proceeding.', 'AIA' );
+		$warning_text = __( 'JavaScript is required to submit posts. Please enable JavaScript before proceeding.', 'AIA' );
 		echo apply_filters( 'aia-javascript-warning', '<noscript>' . $warning_text . '</noscript>', $warning_text, 'comment' );
 	}
 
