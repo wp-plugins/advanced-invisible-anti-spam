@@ -69,7 +69,7 @@ class AIA_bbPress
 
 	public function enqueue_script()
 	{
-		if ( is_bbpress() ) {
+		if ( function_exists( 'is_bbpress' ) && is_bbpress() ) {
 			wp_enqueue_script( 'advanced-invisible-antispam', AIA_PUBLIC_PATH . 'includes/aia.js', false, '1.1', true );
 			wp_localize_script( 'advanced-invisible-antispam', 'AIA', array(
 					'ajaxurl'	=> admin_url( 'admin-ajax.php' )

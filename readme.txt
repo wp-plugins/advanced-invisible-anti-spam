@@ -40,6 +40,9 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 
 == Changelog ==
 
+= 1.4.1 =
+* Bug Fix: Fixed fatal error on sites not using bbPress (sorry)
+
 = 1.4 =
 * New Feature: Added Anti-Spam capabilities to bbPress new topic and reply forms
 
@@ -58,6 +61,9 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 * Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
 
 == Upgrade Notice ==
+
+= 1.4.1 =
+Fixed fatal error on sites not using bbPress (sorry)
 
 = 1.4 =
 New Feature: Added Anti-Spam capabilities to bbPress new topic and reply forms
