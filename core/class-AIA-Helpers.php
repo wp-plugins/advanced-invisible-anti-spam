@@ -40,13 +40,13 @@ class AIA_Helpers
 		$field_key = get_transient( 'aia_field_key' );
 
 		if ( ! $field_key ) {
-			return $this->create_key_name();
+			return self::create_key_name();
 		}
 
 		return $field_key;
 	}
 
-	public function create_key_name()
+	static function create_key_name()
 	{
 		$field_key = wp_generate_password( 12, false );
 
@@ -67,7 +67,7 @@ class AIA_Helpers
 			delete_option( $transient_option  );
 			delete_option( $transient_timeout );
 
-			return $this->create_key_name();
+			return self::create_key_name();
 		}
 
 		return false;
@@ -77,4 +77,4 @@ class AIA_Helpers
 
 add_action(	'plugins_loaded', array( new AIA_Helpers, 'init' ) );
 
-register_activation_hook( AIA_PLUGIN_FILE, array( new AIA_Helpers, 'create_key_name' ) );
+register_activation_hook( AIA_PLUGIN_FILE, array( 'AIA_Helpers', 'create_key_name' ) );

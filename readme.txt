@@ -40,6 +40,9 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 
 == Changelog ==
 
+= 1.4.2 =
+* Fixed bug when get_key_name() fails to create a new key if none is found
+
 = 1.4.1 =
 * Bug Fix: Fixed fatal error on sites not using bbPress (sorry)
 
@@ -61,6 +64,9 @@ Requires JavaScript be enabled in client browser (Users will see a warning if Ja
 * Fixed bug that was preventing comment reply ability from the WordPress comment admin area.
 
 == Upgrade Notice ==
+
+= 1.4.2 =
+Fixed bug when get_key_name() fails to create a new key if none is found
 
 = 1.4.1 =
 Fixed fatal error on sites not using bbPress (sorry)
